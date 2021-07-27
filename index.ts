@@ -7,8 +7,13 @@ let isHungry: boolean = false;
 
 
 type StringOrNumber = number | string; 
+type direction = 'left' | 'right' | 'top' | 'bottom'; 
+
+
 let studentId: StringOrNumber = 45245; 
 studentId = 'WEB4-45245'
+
+let gameDirection: direction = 'bottom';
 
 
 interface Person {
@@ -72,8 +77,8 @@ const add = (a: number, b: number): number => {
 }
 
 
-const introduce = (person: Person): void => {
-    console.log(`Hello, my name is ${person.name}`)
+const introduce = ({name, age, hobby}: Person): void => {
+    console.log(`Hello, my name is ${person.name}, and i am ${age} year's old`)
 }
 
 introduce({
@@ -82,4 +87,10 @@ introduce({
 })
 
 
+const getArray = <T> (arr: T[]): T[] => {
+    return arr;
+}
+
+getArray<number>([12, 25])
+getArray<string>(['mosfiqur', 'rahman']); 
 

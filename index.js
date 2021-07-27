@@ -1,4 +1,3 @@
-"use strict";
 // any, number, string, boolean, object, tuple, enum, undefined, 
 // null, void, never, unknown
 var myName = 'Mosfiqur Rahman';
@@ -44,8 +43,9 @@ greeting('Mosfiqur');
 var add = function (a, b) {
     return a + b;
 };
-var introduce = function (person) {
-    console.log("Hello, my name is " + person.name);
+var introduce = function (_a) {
+    var name = _a.name, age = _a.age, hobby = _a.hobby;
+    console.log("Hello, my name is " + person.name + ", and i am " + age + " year's old");
 };
 introduce({
     name: 'mosfiqur rahman',
