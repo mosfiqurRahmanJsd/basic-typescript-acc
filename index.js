@@ -1,3 +1,4 @@
+"use strict";
 // any, number, string, boolean, object, tuple, enum, undefined, 
 // null, void, never, unknown
 var myName = 'Mosfiqur Rahman';
@@ -6,6 +7,7 @@ age = 12;
 var isHungry = false;
 var studentId = 45245;
 studentId = 'WEB4-45245';
+var gameDirection = 'bottom';
 var person = {
     name: 'Mosfiqur Rahman',
     age: 26,
@@ -51,3 +53,20 @@ introduce({
     name: 'mosfiqur rahman',
     age: 26
 });
+var getArray = function (arr) {
+    return arr;
+};
+getArray([12, 25]);
+getArray(['mosfiqur', 'rahman']);
+// enum
+var Week;
+(function (Week) {
+    Week["Sat"] = "SAT";
+    Week["Sun"] = "SUN";
+    Week["Mon"] = "MON";
+    Week["Tue"] = "TUE";
+    Week["Wed"] = "WED";
+    Week["Thu"] = "THU";
+    Week["Fri"] = "FRI";
+})(Week || (Week = {}));
+console.log(Week.Fri);

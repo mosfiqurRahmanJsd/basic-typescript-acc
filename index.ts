@@ -94,3 +94,20 @@ const getArray = <T> (arr: T[]): T[] => {
 getArray<number>([12, 25])
 getArray<string>(['mosfiqur', 'rahman']); 
 
+
+
+
+// enum
+
+enum Week {
+    Sat = 'SAT', 
+    Sun = 'SUN', 
+    Mon = 'MON', 
+    Tue = 'TUE', 
+    Wed = 'WED',
+    Thu = 'THU',
+    Fri = 'FRI'
+}
+
+
+console.log(Week.Fri)
